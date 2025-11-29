@@ -4,8 +4,6 @@ Google Data Analytics Certificate – Course 1 Automatidala case study
 ### Objective
 Analyze the data of taxi drives in new york city
 
-### The actual notebook
- [Automatidata_Project.ipynb](./Automatidata_Project.ipynb)  
 
 ### PACE plan 
 | Milestone | What I did                                 | Deliverable                                  | Who cares about it                  |
@@ -17,5 +15,4 @@ Analyze the data of taxi drives in new york city
 | 5 + 5a   | Final report                               | Coming when I finish the cert                | Everyone                            |
 | 6 + 6a   | Close the project                          | One day…                                     | Victor                              |
 
-### Tools I used
-Python • Pandas • Matplotlib • Seaborn • Jupyter
+
