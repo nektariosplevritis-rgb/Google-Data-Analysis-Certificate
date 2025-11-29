@@ -1,41 +1,21 @@
 # Course 1 – Automatidata Project  
-**Google Data Analytics Professional Certificate**
+Google Data Analytics Certificate – Course 1 Automatidala case study
 
-Analysis of 2017 New York City Yellow Taxi Trip Data
+### Objective
+Analyze the data of taxi drives in new york city
 
-### Overview
-Automatidata, a taxi company operating in New York City, hired the data analytics team to better understand customer behaviour, trip patterns, and revenue drivers using real 2017 yellow taxi trip records.
+### The actual notebook
+ [Automatidata_Project.ipynb](./Automatidata_Project.ipynb)  
 
-### Project Plan & Milestones (PACE)
+### PACE plan 
+| Milestone | What I did                                 | Deliverable                                  | Who cares about it                  |
+|----------|--------------------------------------------|----------------------------------------------|-------------------------------------|
+| 1 + 1a   | Calculated stats + first look at the data  | Project kick-off doc                         | Victor (PM), Luana (Director)       |
+| 2 + 2a   | Chose Python + built a quick regression    | Clean dataset ready for analysis             | Luana                               |
+| 3 + 3a   | Full EDA + found the gold                  | This notebook + plots                        | Operations team                     |
+| 4 + 4a   | Summary + recommendations + fake presentation | Slides (not included yet)                  | Leadership                          |
+| 5 + 5a   | Final report                               | Coming when I finish the cert                | Everyone                            |
+| 6 + 6a   | Close the project                          | One day…                                     | Victor                              |
 
-| Milestone | Tasks                                 | Deliverables / Reports                        | Relevant Stakeholder (Optional Activity)      |
-|-----------|---------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| 1         | Compute descriptive statistics        | • Global-level project document               | Victor (Project Manager), Luana (Director)    |
-| 1a        | Begin exploring the data              |                                               | Uli (Senior Data Analyst)                    |
-| 2         | Select software / languages           | • Data files ready for EDA                    | Luana                                         |
-| 2a        | Build a regression model              |                                               |                                               |
-| 3         | Conduct exploratory data analysis     | • Jupyter notebook with visualisations & insights | Luana, Automatidata operations team        |
-| 3a        | Identify key patterns and trends      |                                               |                                               |
-| 4         | Summarise findings & recommendations  | • Final presentation deck / executive summary| Victor, Luana, Automatidata leadership       |
-| 4a        | Present results to stakeholders       |                                               |                                               |
-| 5         | Create final report                   | • Complete project report                     | Victor, Luana                                 |
-| 5a        | Share final report with stakeholders  |                                               |                                               |
-| 6         | Follow up on feedback and next steps  | • Action plan for implementation             | Automatidata leadership                       |
-| 6a        | Close out project                     | • Project closure document                    | Victor                                        |
-
-**Timeline**: 4 weeks (Nov–Dec 2025)
-
-### Notebook
-[Automatidata_Project.ipynb](./Automatidata_Project.ipynb)
-
-### Skills Demonstrated
-- Data cleaning & validation  
-- Exploratory data analysis (EDA)  
-- Statistical summaries  
-- Visualisation (matplotlib / seaborn)  
-- Project planning (PACE framework)
-
-### Tools Used
-Python • Pandas • NumPy • Matplotlib • Seaborn • Jupyter Notebook
-
-Google Certificate Progress: **Course 1 / 8 complete**
+### Tools I used
+Python • Pandas • Matplotlib • Seaborn • Jupyter
