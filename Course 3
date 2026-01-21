@@ -1,0 +1,41 @@
+Label encoding in Python
+
+#Load libraries
+import datetime
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+
+In[3]:#Create a new data frame with the number of strikes per month
+df['date'] = pd.to_datetime(df['date'])
+df['month'] = df['date'].dt.month_name().st.slice(stop=3)
+#Make the month names categorical so they are in calenda instead of alphabetic
+#order when we plot them
+months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+df['month']=pd.Categorical(df['month'],categories = months, ordered = True)
+df['year']=df['date'].dt.strftime('%Y')
+
+df_by_month=df.groupby(['year','month']).sum().reset_index()
+df_by_month.head()
+
+Out[3]:
+   year  month number_of_strikes
+0  2016  Jan    313595
+1  2016  Feb    312676
+2  2016  Mar   2057527
+3  2016  Apr   2636427
+4  2016  May   5800500
+
+In[4]:#Create a categorical variable by bucketing the number of lightning strikes
+#per month into severeness levels based on quantiles
+df_by_month['strike_level']=pd.qcut(df_by_month['number_of_strikes'],4,labels=['Mild','Scattered','Heavy','Severe'])
+df_by_month.head()
+
+Out[4]:
+   year  month number_of_strikes strike_level
+0  2016  Jan    313595              Mild 
+1  2016  Feb    312676              Mild
+2  2016  Mar   2057527         Scattered
+3  2016  Apr   2636427             Heavy
+4  2016  May   5800500            Severe
+
