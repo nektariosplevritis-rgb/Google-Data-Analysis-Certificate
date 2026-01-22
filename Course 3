@@ -87,3 +87,76 @@ colorbar = ax.collections[0].colorbar
 colorbar.set_ticks([0,1,2,3])
 colorbar.set_ticklabels(['Mild','Scattered','Heavy','Severe])
 plt.show()
+
+#Load libraries
+
+import datetime
+import matplotlib.pyplot as plt
+import pandas as pd
+import plotly.express as px
+import seaborn as sns
+
+In[3]:
+#Take a peek at the data
+df.head()
+
+Out[3]:
+    date number_of_strikes center_point_geom longitude latitude
+0   2018-01-03      194     POINT(-75 27)        -75.0     27.0
+1   2018-01-03       41   POINT(-78.4 29)        -78.4     29.0
+2   2018-01-03       33   POINT(-73.9 27)        -73.9     27.0
+3   2018-01-03       38   POINT(-73.8 27)        -73.8     27.0
+4   2018-01-03       92     POINT(-79 28)        -79.0     28.0
+
+In[4]:
+#Display the data type of the columns.
+print(df.dtypes)
+#Date is currently a string. Let's parse it into a datetime column.
+df['date'] = pd.to_datetime(df['date'])
+
+date                 object
+number_of_strikes     int64
+center_point_geom    object
+longitude           float64
+latitude            float64
+dtype: object
+
+In[5]:
+#Count the number of missing values in each column
+df.isnull().sum()
+
+Out[5]:
+date                 0
+number_of_strikes    0
+center_point_geom    0
+longitude            0
+latitude             0
+dtype:int64
+
+In[6]:
+#Check ranges for all variables
+df.describe(include = 'all')
+        date   number_of_strikes  center_point_geom     longitude     latitude
+count  3401012      3.401012e+06            3401012  3.401012e+06 3.401012e+06
+unique     357               NaN             170855           NaN          NaN
+top    2018-09-01 00:00:00   NaN   POINT(-81.5 22.5)          NaN          NaN
+freq     31773               NaN                108           NaN          NaN
+first  2018-01-01 00:00:00   NaN                NaN           NaN          NaN
+last   2018-12-31 00:00:00   NaN                NaN           NaN          NaN
+
+In[7]:
+#Find missing dates by comparing all dates in 2018 to dates in
+#our 'date' column.
+
+full_date_range = pd.date_range(start = '2018-01-01' , end= '2018-12-31')
+full_date_range.difference(df['date'])
+
+Out[7]:
+DatetimeIndex(['2018-06-19', '2018-06-20' , '2018-06-21' , '2018-06-22' ]
+
+
+
+
+
+
+
