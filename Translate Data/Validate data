@@ -1,0 +1,42 @@
+STEP 1: Imports
+
+#Import libraries and packages.
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+In[2]: #Run this cell so pandas displays all columns
+       pd.set_option ('display.max_columns',None)
+
+In[3]: companies = pd.read_csv('Modified_Unicorn_Companies.csv')
+       #Display the first fice rows.
+
+       companies.head()
+
+Out[3]:      Company  Valuation  Date Joined   Industry      City Country/Region      Continent Year Founded
+       0   Bytedance        180   2017-04-07        A.I   Beijing          China           Asia         2012
+       1      SpaceX        100   2012-12-01      Other Hawthorne  United States  North America         2002
+       2       SHEIN        100   2018-07-03 E-commerce  Shenzhen          China           Asia         2008
+       3       Stripe        95   2014-01-23    FinTech San Fran.  United States  North America         2010
+       4       Klarna        46   2011-12-12    FinTech Stockholm         Sweden         Europe         2005
+
+Step 2: Data cleaning
+
+In[4]: #Display the data types of the columns.
+       companies.dtypes
+
+Out[4]: Company          object
+        Valuation         int64
+        Date Joined      object
+        Industry         object
+        City             object
+        Country/Region   object
+        Continent        object
+        Year Founded      int64
+        Funding          object
+        Select Investors object
+        dtype: object
+
+
