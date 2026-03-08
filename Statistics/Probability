@@ -25,6 +25,8 @@ Probability distributions
 
 Discrete probability distributions
 -Continious probability
+-Poisson distribution:Models the probability that a certain number of events
+                      will occur during a specific time period
 -Z-scores
 -SciPy stats
 
