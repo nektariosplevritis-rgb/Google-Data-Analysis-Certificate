@@ -19,6 +19,7 @@ Conditional probability: The probability of an event occuring given that
      * P(A and B) = P(A) * P(B|A)
 
 Bayes' Theorem
+     * P(A|B) = (P(B|A) * P(A)) / P(B)
 
 Probability distributions
 
