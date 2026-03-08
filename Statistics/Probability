@@ -1,6 +1,13 @@
 The branch of mathematics that deals with measuring and quantifying uncertainty
 
 Types of probability
+-Objective probability: Based on statistics, experiments, and mathematical measurements
+    * Classical probability: Based on formal reasoning about events with equally likely outcomes
+      Classical probability = Number of desired outcomes/Total number of possible outcomes
+    * Empirical probability: Based on experimental or historical data
+      Empirical probability= Number of times a specific event occurs/Total number of events
+
+-Subjective probability: Based on personal feelings, experience, or judgment
 
 Basic rules of probability
 
