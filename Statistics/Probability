@@ -13,7 +13,10 @@ Basic rules of probability
 - Events in probability
      * if the probability of an event equals 0, there is a 0% chance that the event will occur
      * if the probability of an event equals 1, there is a 100% chance that the event will occur 
-Conditional probability
+
+Conditional probability: The probability of an event occuring given that 
+                         another event has already occurred
+     * P(A and B) = P(A) * P(B|A)
 
 Bayes' Theorem
 
