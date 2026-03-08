@@ -10,7 +10,9 @@ Types of probability
 -Subjective probability: Based on personal feelings, experience, or judgment
 
 Basic rules of probability
-
+- Events in probability
+     * if the probability of an event equals 0, there is a 0% chance that the event will occur
+     * if the probability of an event equals 1, there is a 100% chance that the event will occur 
 Conditional probability
 
 Bayes' Theorem
