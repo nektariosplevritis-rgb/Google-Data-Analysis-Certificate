@@ -27,7 +27,8 @@ Discrete probability distributions
 -Continious probability
 -Poisson distribution:Models the probability that a certain number of events
                       will occur during a specific time period
--Z-scores
+-Z-scores:A measure of how many standard deviations below or above the population
+          mean a data point is
 -SciPy stats
 
 Probability notation
