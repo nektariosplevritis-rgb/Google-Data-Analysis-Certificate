@@ -23,3 +23,11 @@ Discrete probability distributions
 -Continious probability
 -Z-scores
 -SciPy stats
+
+Probability notation
+- P(A) = probability of event A
+- P(B) = probability of event B
+- P(A') = probabilty of not event A
+   * P(A or B) = P(A) + P(B)
+     P(A and B) = P(A) * P(B) 
+
