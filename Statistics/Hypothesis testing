@@ -8,3 +8,17 @@ Average recovery
 
 Statistical significance: The claim that the results of a test or experiment are not explainable by chance alone
 
+Steps for performing a hypothesis test
+1. State the null hypothesis and the alternative hypothesis
+2. Choose a significance level
+3. Find the p-value
+4. Reject or fail to reject the null hypothesis
+
+Null hypothesis: A statement that is assumed to be true unless there is convincing
+                 evidence to the contrary
+Alternative hypothesis: A statement that contradicts the null hypothesis, and is
+                        accepted as true only if there is convincing evidence for it
+Significance Level: The probability of rejecting the null hypothesis when it is true
+P-value: The probability of observing results as or more extreme than those observed
+         when the null hypothesis is true
+
